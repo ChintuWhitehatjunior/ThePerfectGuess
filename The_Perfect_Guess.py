@@ -7,16 +7,14 @@ while(ans != randNo):
     if(ans == randNo):
         guess += 1
         print("You Guessed Right!")
-        print(f"It took you {guess} guess/guesses")
-    else:
-        if(ans > randNo):
+        if(guess>1):
+            print(f"It took you a single guess, Amazing!")
+        else:
+            print(f"It took you {guess} guesses")
+
+    elif(ans > randNo):
             print("Enter a lower no and try again")
             guess += 1
-        else:
+    else:
             print("Enter a higher no and try again")
             guess += 1
-
-
-
-
-    
